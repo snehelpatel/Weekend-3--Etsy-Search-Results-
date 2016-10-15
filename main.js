@@ -1,14 +1,4 @@
-// var listingBlock = [" "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "];
-//
-// function renderListing (space) {
-//   if (space === " ") {
-//     return `<div class= "box"></div>`;
-//   }
-//
-//
-// function render (listingsBlocked) {
-//   var intoHtml = []
-// }
+var results = items.results;
 
 $(function() {
   for (var i=0; i <16; i++) {
@@ -17,15 +7,11 @@ $(function() {
   }
 });
 
+var prices = results.map(function(result){
+return result.price;
+})
 
-
-
-
-// $(document).ready(function() {
-//     for(var x = 0; x < 16; x++) {
-//         for(var y = 0; y < 16; y++) {
-//             var unit = $("<div class='unit'></div>");
-//             unit.appendTo('#container');
-//         }
-//     }
-// });
+var images = results.map(function(result){
+return result.Images[0].url_fullxfull
+;
+})
