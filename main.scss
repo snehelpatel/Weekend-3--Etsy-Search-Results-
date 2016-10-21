@@ -16,24 +16,66 @@
   left:110px;
 }
 
+
+#bar-three {
+  list-style: none;
+  position: relative;
+  color:lightgray;
+  }
+#cart{
+  position: absolute;
+  bottom:20px;
+  left:1075px;
+}
+#sell{
+  position: absolute;
+  bottom:30px;
+  left:800px;
+}
+#register{
+  position: absolute;
+  bottom:30px;
+  left:900px;
+}
+#sign-in{
+  position: absolute;
+  bottom:30px;
+  left:975px;
+}
 #bar-two {
   list-style: none;
   float:left;
   margin-top:10px;
   margin-bottom:10px;
-  width:1200px;
+  width:1112px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+
 
 }
 
 .links {
   float:left;
   margin:10px;
+  padding-right: 15px;
   color:#797979;
   margin-right:1.5px;
 }
 
+#top-container {
+  position:relative;
+}
+
+span {
+  padding-left: 45px;
+}
+
+#cats{
+  color: #00A9C9;
+}
+
 #biggest-container {
-  margin-top: 60px;
+  margin-top: 67px;
   background-color:#F3F5F0;
   position:relative;
   height:1200px;
@@ -63,10 +105,62 @@
     top: 45px;
 }
 
-.dumb-box {
-  height:220px;
+.items-box {
+  height:240px;
   width:220px;
-  border:1px solid gray;
+  border:1px solid lightgray;
   margin:4px;
+  font-size: 14px;
   display:inline-block;
+  background-color: white;
+  border-radius: 4px;
 }
+
+.items-box > img {
+  height: 200px;
+  width: 220px;
+
+}
+.shop {
+  // display: inline-block;
+  float:left;
+  color:lightgray;
+  padding-left: 3px;
+
+
+}
+.prices {
+// display: inline-block;
+float:right;
+color:lightgreen;
+padding-right: 5px;
+
+}
+
+.title{
+
+  width:220px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+
+}
+
+.title > a {
+  text-decoration: none;
+  color:black;
+}
+
+
+.burgerHearts{
+   position:relative;
+ height:4px; }
+
+.burgerHearts > div {
+  position:absolute;
+  left:160px;
+  display:none;
+  z-index:99; }
+
+.burgerHearts:hover > div{
+  display:block; }
