@@ -1,5 +1,6 @@
 ### Etsy Search Result Page
-#[Etsy Tea Search](https://www.etsy.com/search?q=tea)
+
+[Etsy Tea Search](https://www.etsy.com/search?q=tea)
 
 Our third weekend assignment was to recreate the first page of an Etsy search result.
 This assignment is meant to reflect our understanding of
