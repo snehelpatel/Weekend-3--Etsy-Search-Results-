@@ -1,5 +1,7 @@
 
-
+body {
+  font-family: sans-serif;
+}
 #bar-one {
   list-style: none;
   position:relative;
@@ -16,6 +18,31 @@
   left:110px;
 }
 
+li {
+  color: #00AAC7;
+}
+
+#sign-in {
+  border-radius: 4px;
+  padding: 2px;
+  border: 1px solid #00AAC7;
+
+}
+input {
+  height:20px;
+  position: relative;
+}
+
+button {
+  color: white;
+  border: none;
+  height:26px;
+  position: absolute;
+  left:129px;
+  bottom:0px;
+  background-color: #00AAC7;
+
+}
 
 #bar-three {
   list-style: none;
@@ -26,6 +53,14 @@
   position: absolute;
   bottom:20px;
   left:1075px;
+}
+
+div#cart-text {
+  font-size: 12px;
+  color: gray;
+}
+#cart > img {
+  height:20px;
 }
 #sell{
   position: absolute;
@@ -86,12 +121,15 @@ span {
   list-style: none;
   background-color: #FFFFFF;
   color: #00A9C9;
-  width:150px;
+  width:155px;
   margin-right:0px;
   margin-left:40px;
   padding-left:5px;
-  border:1px solid gray
+  border:1px solid lightgray;
+  font-size: 15px;
+
 }
+
 
 .left-bar-link{
   margin-top:3.5px;
@@ -114,13 +152,59 @@ span {
   display:inline-block;
   background-color: white;
   border-radius: 4px;
+  position:relative;
+  z-index: 1;
+
+  .burgerHearts{
+    position: absolute;
+    top:1px;
+    right:5px;
+    z-index: -1;
+
 }
+
+}
+
+.items-box:hover {
+  .burgerHearts{
+    position: absolute;
+    top:1px;
+    right:5px;
+    z-index: 2
+
+}
+
+}
+
+// items-box:hover {
+//
+// .burgerHearts{
+//   position:absolute;
+//   left: 210px;
+//     .heart{
+//       display: inline-block;
+//       width: 10px;
+//       height: 10px;
+//     }
+//     .hamburger{
+//       display: inline-block;
+//     }
+//   }
+// }
+
 
 .items-box > img {
   height: 200px;
   width: 220px;
 
+
+
+
 }
+
+
+
+
 .shop {
   // display: inline-block;
   float:left;
@@ -146,21 +230,18 @@ padding-right: 5px;
 
 }
 
-.title > a {
-  text-decoration: none;
-  color:black;
+.items-box a {
+  text-decoration: none;}
+
+
+.shop a {
+  color: gray;
 }
 
+.title a {
+  color: black;
+}
 
-.burgerHearts{
-   position:relative;
- height:4px; }
-
-.burgerHearts > div {
-  position:absolute;
-  left:160px;
-  display:none;
-  z-index:99; }
-
-.burgerHearts:hover > div{
-  display:block; }
+.prices a {
+  color: lightgreen;
+}

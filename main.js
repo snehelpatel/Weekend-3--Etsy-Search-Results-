@@ -39,11 +39,12 @@ var burger= `<img class="hamburger" src="./assets/hamburger.png">`
 $(function() {
   for (var i=0; i <16; i++) {
   $( `#right-container`).append(`<div class='items-box'>
-  <div class="burgerHearts"><div>${heart}${burger}</div></div>
-  <img src= "${images[i]}"/>
-  <div class= "shop">${shop[i]}</div>
-  <div class = "prices"> $${prices[i]}</div>
-   <div class= "title"><a href="${link[i]}">${title[i]}</a></div>
+
+  <img src= "${images[i]}"/><div class="burgerHearts">${heart}${burger}</div>
+  <div class= "title"><a href="${link[i]}">${title[i]}</a></div>
+  <div class= "shop"><a href="${link[i]}">${shop[i]}</div>
+  <div class = "prices"> <a href="${link[i]}">$${prices[i]}</div>
+
 
 
    </div>`
